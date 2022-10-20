@@ -1,8 +1,8 @@
-import React from "react";
+import { Component } from 'react';
 import { connect } from "react-redux";
 import { Form, Button } from "react-bootstrap";
 
-export class Register extends React.Component {
+export class Register extends Component {
   constructor() {
     super();
 

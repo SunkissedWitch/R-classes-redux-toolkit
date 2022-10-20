@@ -1,9 +1,9 @@
-import React from "react";
+import { Component } from 'react';
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { Form, Button } from "react-bootstrap";
 
-export class Login extends React.Component {
+export class Login extends Component {
   constructor() {
     super();
 
@@ -27,7 +27,7 @@ export class Login extends React.Component {
   render () {
 
     return (
-      <>
+      <div className='form-block'>
         <Form>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
@@ -50,7 +50,7 @@ export class Login extends React.Component {
           </Button>
         </Form>
         <Link to={'/register'}>Sign In</Link>
-      </>
+      </div>
     )
   }
 }

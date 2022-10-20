@@ -37,3 +37,13 @@
     transform: translateY(0px);
   }
 }
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.form-block {
+  width: 600px;
+  margin: auto;
+}
